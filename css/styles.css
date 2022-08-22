@@ -1,0 +1,179 @@
+@import url(normalize.css);
+
+/* Project Essentials */
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    width: 100%;
+    display: inline-block;
+}
+
+*, *::after,*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-soft-blue:hsl(215, 51%, 70%);
+    --color-cyan:hsl(178, 100%, 50%);
+    --color-dark-blue-main-bg:hsl(217, 54%, 11%);
+    --color-dark-blue-card-bg:hsl(216, 50%, 16%);
+    --color-dark-blue-line:hsl(215, 32%, 27%);
+    --color-white:hsl(0, 0%, 100%);
+
+    --fs-regular:1.8rem;
+    --fw-lighter:300;
+    --fw-light:400;
+    --fw-bold:600;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-weight: var(--fw-lighter);
+    font-size: var(--fs-regular);
+    color: var(--color-soft-blue);
+
+}
+
+
+
+
+/* project Specific */
+
+.container{
+    background-color: var(--color-dark-blue-main-bg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--color-dark-blue-card-bg);
+    max-width: 350px;
+    padding: 22px;
+    border-radius: 15px;
+}
+
+.card__image img{
+    border-radius: 15px;
+}
+
+.card__image{
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.title{
+    color: white;
+    font-size: 2.2rem;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.view__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view{
+    background-color: hsl(178, 100%, 50%,50%);
+    opacity: 0;
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 4px);
+    transition: 0.2s opacity ;
+}
+
+.view:hover{
+    opacity: 1;
+}
+
+.title:hover{
+    color: var(--color-cyan);
+}
+
+.price{
+    color: cyan;
+}
+
+.details{
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+
+.foooter{
+    font-size: 1rem;
+}
+
+.detail {
+    position: relative;
+    bottom: 4px;
+    margin-left: 5px;
+}
+
+.icon{
+    width: 20px;
+}
+
+.icon--small{
+    width: 15px;
+}
+
+.icon--big{
+    width: 35px;
+}
+
+.icon--creator{
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.creator__name{
+    color: cyan;
+    cursor: pointer;
+}
+.creator{
+    display: inline-block;
+    font-size: 1.6rem;
+    word-spacing: 1.5px;
+}
+
+.creator__name:hover{
+    color: #a7dbdb;
+}
+
+.line{
+    height: 0.5px;
+    background-color: var(--color-dark-blue-line);
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
